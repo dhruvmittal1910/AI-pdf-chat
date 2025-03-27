@@ -3,9 +3,8 @@
 import { getApp, getApps, initializeApp } from "firebase/app"
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
-
 const firebaseConfig = {
-    apiKey: "AIzaSyD5SJ_o5MmygwlDFDLRrYFCP-CxF30U6es",
+    apiKey: process.env.FIREBASE_API_KEY,
     authDomain: "pdf-chat-f49f3.firebaseapp.com",
     projectId: "pdf-chat-f49f3",
     storageBucket: "pdf-chat-f49f3.firebasestorage.app",
